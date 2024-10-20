@@ -7,6 +7,23 @@ title_ascii = figlet_format(title, font="slant", justify="center")
 title_colored = colored(title_ascii, color="cyan")
 print(title_colored)
 
+# Display the creator of the program with their social handles
+creator_info = """
+Created by: Dem0saic
+GitHub: https://github.com/dem0saic
+LinkedIn: https://www.linkedin.com/in/owusuvincent/
+"""
+creator_colored = colored(creator_info, color="yellow")
+print(creator_colored)
+
+# Print the description of the program
+welcome_mes = colored("Welcome to the Caesar Cipher program!", color="green", attrs=["bold"])
+print(welcome_mes)
+print("This program encrypts and decrypts messages using the Caesar cipher.")
+print("The Caesar cipher shifts each letter in the message by a fixed number of positions.")
+print("For example, with a shift of 1, A would be replaced by B, B would become C, and so on.")
+print("The user can choose the shift number and whether to encode or decode the message.")
+print()
 
 def caesar_cipher(text, shift, direction):
     # If the direction is "decode", reverse the shift
