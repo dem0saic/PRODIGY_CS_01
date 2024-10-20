@@ -1,3 +1,13 @@
+from pyfiglet import figlet_format
+from termcolor import colored
+
+# Print the title of the program
+title = "Caesar Cipher"
+title_ascii = figlet_format(title, font="slant", justify="center")
+title_colored = colored(title_ascii, color="cyan")
+print(title_colored)
+
+
 def caesar_cipher(text, shift, direction):
     # If the direction is "decode", reverse the shift
     if direction == "decode":
